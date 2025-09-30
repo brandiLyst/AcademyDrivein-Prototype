@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Agent - Intelligent Conversational Assistant</title>
+    <meta name="description" content="Experience the future of AI-powered text communication with our intelligent conversational assistant.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Text Agent</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#demo" class="nav-link">Demo</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Intelligent Text Agent
+                    <span class="gradient-text">for Modern Communication</span>
+                </h1>
+                <p class="hero-description">
+                    Experience the future of AI-powered conversations. Our advanced text agent understands context, 
+                    provides intelligent responses, and adapts to your communication style.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToDemo()">
+                        <i class="fas fa-play"></i>
+                        Try Demo
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="chat-preview">
+                    <div class="chat-header">
+                        <div class="chat-status">
+                            <div class="status-dot"></div>
+                            <span>AI Agent Online</span>
+                        </div>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message user-message">
+                            <div class="message-content">Hello! Can you help me with my project?</div>
+                        </div>
+                        <div class="message ai-message">
+                            <div class="message-avatar">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="message-content">
+                                Absolutely! I'd be happy to help you with your project. 
+                                What specific area would you like assistance with?
+                            </div>
+                        </div>
+                        <div class="typing-indicator">
+                            <div class="typing-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Our AI Text Agent?</h2>
+                <p class="section-description">
+                    Powered by cutting-edge AI technology to deliver exceptional conversational experiences
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="feature-title">Intelligent Understanding</h3>
+                    <p class="feature-description">
+                        Advanced natural language processing ensures accurate comprehension of context and intent.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightning-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">
+                        Get instant responses with our optimized AI infrastructure for seamless conversations.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Secure & Private</h3>
+                    <p class="feature-description">
+                        Your conversations are protected with enterprise-grade security and privacy measures.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="feature-title">Customizable</h3>
+                    <p class="feature-description">
+                        Tailor the AI's personality and responses to match your specific needs and preferences.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="feature-title">Multi-Language</h3>
+                    <p class="feature-description">
+                        Communicate in multiple languages with native-level understanding and fluency.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Continuous Learning</h3>
+                    <p class="feature-description">
+                        The AI continuously improves through interactions, becoming more helpful over time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Get Started?</h2>
+                <p class="section-description">
+                    Our AI text agent is available 24/7 to assist you. Look for the chatbot in the bottom right corner of your screen to start a conversation instantly.
+                </p>
+                <div class="chat-widget-info">
+                    <div class="chat-info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-comment-dots"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>AI Chat Widget Active</h3>
+                            <p>Look for the chat button in the bottom right corner of your screen to start a conversation with our AI text agent.</p>
+                            <div class="chat-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>24/7 Available</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Instant Responses</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>German Language Support</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-arrow">
+                            <i class="fas fa-arrow-down-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">< 100ms</div>
+                    <div class="stat-label">Response Time</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Languages</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Availability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="brand-logo">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Text Agent</span>
+                        </div>
+                        <p class="brand-description">
+                            Revolutionizing communication through intelligent AI-powered conversations.
+                        </p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h4>Product</h4>
+                            <a href="#features">Features</a>
+                            <a href="#demo">Demo</a>
+                            <a href="#">Documentation</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>Company</h4>
+                            <a href="#">About</a>
+                            <a href="#">Blog</a>
+                            <a href="#">Careers</a>
+                        </div>
+                        <div class="link-group">
+                            <h4>Support</h4>
+                            <a href="#">Help Center</a>
+                            <a href="#">Contact</a>
+                            <a href="#">Privacy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 AI Text Agent. All rights reserved.</p>
+                    </div>
+                    <div class="footer-social">
+                        <p class="connect-text">Like my work?</p>
+                        <a href="https://www.linkedin.com/in/fahad-ramxan/" target="_blank" class="linkedin-btn">
+                            <i class="fab fa-linkedin"></i>
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- n8n Chat Widget Container -->
+    <div id="n8n-chat"></div>
+
+    <script src="script.js"></script>
+    
+    <!-- n8n Chat Widget Initialization -->
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'https://brandilyst-ug.app.n8n.cloud/webhook/6dfeee1c-72cd-4227-90aa-11f62823cd4e/chat',
+            mode: 'window',
+            showWelcomeScreen: true,
+            initialMessages: [
+                'Hallo! 👋',
+                'Ich bin Ihr intelligenter KI-Text-Agent. Wie kann ich Ihnen heute behilflich sein?'
+            ],
+            i18n: {
+                en: {
+                    title: '✨ Intelligenter KI-Agent',
+                    subtitle: 'Professionelle Unterstützung rund um die Uhr.',
+                    footer: '',
+                    getStarted: 'Gespräch beginnen',
+                    inputPlaceholder: 'Ihre Nachricht eingeben...'
+                }
+            },
+            defaultLanguage: 'en',
+            loadPreviousSession: true,
+            enableStreaming: false
+        });
+    </script>
+
+    <!-- ElevenLabs Conversation Widget -->
+    <elevenlabs-convai agent-id="agent_8501k6btsp09f67twvd1jbdwhqjb"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+</html>
